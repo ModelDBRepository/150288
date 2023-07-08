@@ -82,7 +82,7 @@ for(i=pc.id;i<NCELL;i+=pc.nhost) {              // Distribute the cells evenly a
 		cell = new InterneuronCell()            // Create 200 Interneuron cells (cell 800 ~ cell 999) 
 	}
 	cells.append(cell)                          // Add this cell to the list (otherwise its lost!)
-	pc.set_gid2node(i, pc.id)                   // Associate “i?with this node id
+	pc.set_gid2node(i, pc.id)                   // Associate â€œi?with this node id
 												// nc = (create netcon object on cell)
 	nc = cell.connect2target(nil) 				// attach spike detector $
 	nc.delay = 2
